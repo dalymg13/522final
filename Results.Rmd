@@ -1,0 +1,70 @@
+---
+title: "Results"
+---
+
+#Data Overview
+```{r include=FALSE}
+library(readxl)
+G6Data <- read_excel("Group 6 n181.xlsx")
+View(G6Data)
+attach(G6Data)
+```
+
+###Main ANOVA: Cheating Percentage by Norm type, Frame type, Gender, and University
+```{r}
+all<-aov(Percentage~Frame*Norm+Loc+Gender)
+summary(all)
+```
+  To explore the first hypothesis, that normative messages will decrease lying behavior, a factorial ANOVA was run with Norm type, frame type, gender, university, and a frame*norm interaction as the independent variables and percentage of dishonest behavior as the dependent variable. The main effect for Type of Frame yielded an F ratio of F(1,129) = 4.38, p = 0.04, indicating a significant difference between positive (M = 39.0%, SD = 42.32%) and negative (M = 23.36%, SD = 39.67%) frames. However, the F ratio investigating type of norm F(1,129) = 0.273, p = 0.6, revealed an extremely insignificant effect with both conditons just above 30% dishonesty. The main effect for gender yielded an F ratio F(1,129) = 3.18, p = 0.08, suggesting an effect that is approaching significance where males (M = 39.1%, SD = 44.5%) exceed the dishonesty levels of females (M = 25.7%, SD = 39.0%). This could become significant with greater experimental power.
+
+
+####Conditon Breakdown
+```{r}
+independent<-aov(Percentage~Condition)
+summary(independent)
+
+pairwise.t.test(Percentage,Condition,p.adj = "none")
+```
+  Despite the non-significance of the overall ANOVA, a follow up test was run to check relationships of conditions to each other, beyond the control value. Only one of these values approaches significance. The Empirical Positive treatment has
+more cheating on average than the Normative Negative treatment with p = 0.055. The table also allows us to check the significance of Hypothesis 2, which proposed that an interaction effect would lead to Empirical Negative messaging having higher levels of cheating than Empirical Positive messaging. There is no significant difference between the two Empirical conditions, despite the apparent effect of negatively framed messages found in the first ANOVA. Power issues also prevent any multiple comparisons correction from being interpretable.
+
+
+###Adding Risk Tolerance
+```{r}
+lm1<-lm(Percentage~Frame*Norm+Risk_1+Gender)
+summary(lm1)
+```
+  One variable of interest for additional testing was Risk Tolerance, on a scale of 1-10 with 1 being the most risk averse. This variable is ordinal, but with enough levels that I decided to treat it as continuous. Interestingly, adding risk into the equation completely negates the previous significance of both frame and any chance at significance for gender. The latter of these relationships makes sense because studies have consistently found higher levels of risk among men than women. The former effect, however, is more of a mystery to explore. The following analyses look at the relationship between dishonesty and risk, as well as risk and the conditions.
+
+####Risk Exploration
+```{r}
+cor.test(Percentage,Risk_1)
+
+lmrisk<-lm(Risk_1~Percentage)
+summary(lmrisk)
+
+riskaov<-aov(Risk_1~Norm*Frame)
+summary(riskaov)
+```
+  These three tests were used to check whether risk is a confounded variable that should not be included in the overall analysis. Specifically, the results of the third test checking an effect of frame type on risk score is a cause for concern F(1,141) = 3.91, p = 0.05, due to the experimental design. Risk tolerance was asked in the demographics section, which participants responded to at the very end of the experiment. Because the location of this question was not counterbalanced and asked before the message was seen, there could be a spillover effect of either the message on reported risk score or the actual cheating behavior itself on risk. The latter of these relationships would be predicted by the theory of cognitive dissonance, such that if participants reflect on the lying behavior they just displayed they could be more likely to report a higher risk tolerance. Neither of these potentially confounding effects can be eliminated without follow-up research with the counterbalancing.
+
+
+###Time-Series Analysis
+```{r include=FALSE}
+library(readxl)
+RbyR <- read_excel("RbyR.xlsx")
+View(RbyR)
+attach(RbyR)
+```
+  The final hypothesis H3, was that positively framed messages would lead to honesty persisting longer through the ten rounds. We coded the data into lying averages per round, rather than per individual, to investigate this idea and split the round averages by condition. This setup allowed us to look at a multiple regression to predict the percentage of dishonesty based on condition and round number. The one drawback of this data setup is that it prevents any statistical analysis on an interaction between condition and round because the number of datapoints is too few to have sufficient degrees of freedom.
+
+```{r}
+lm4<-lm(RPercentage~RCondition+factor(Round))
+summary(lm4)
+
+library(lattice)
+xyplot(RPercentage~Round,type=c('l','p'),groups=RCondition,data=RbyR,auto.key=T)
+```
+  
+  The regression equation proved to be significant, F(13,36) = 17.18, p < 0.001, and explained 81% of the variance in dishonesty rates. Within this regression there were two significant effects of condition and multiple by round. Both empirical negative and normative negative messages predicted lower levels of lying by about 15% compared to the other conditions, p < 0.001 for both. Three different rounds predicted significantly more lying when compared to round one and another three rounds were approaching significance in the same direction. In general, this majority suggests that the messages may have been somewhat successful initially and prevented a significant amount of dishonesty from occurring in round one. Rounds two, five, and ten displayed significantly more lying than round one, by about 7% at p < 0.01.Rounds four, seven, and eight showed higher levels of lying but were only approaching significance, with p = 0.07 on average. Interestingly, the only round with an extremely insignificant p-value in comparison to round one is round nine. This paints an odd picture of end-game behavior when considered next to the high level of dishonesty in round 10. Although the frame result mirrors earlier analyses suggesting the power of a negative frame and messages generally seem to decrease lying in round one, an interaction between the two independent variables is needed to fully support the third hypothesis.
+  

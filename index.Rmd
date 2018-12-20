@@ -1,0 +1,36 @@
+---
+title: "Michael Daly 522 Final Project"
+---
+
+##Increasing Message Influence with Norms and Frames
+
+### Introduction
+  Universal among public programs and policies is the desire for messages to influence individuals’ behavior towards more beneficial outcomes. To maximize this outcome, and prevent misinterpretation leading to the opposite of the desired behavior, it is important to enhance the content of the message people receive. Using frames to maximize the salience of norms that help people make decisions is a topic of interest for researchers and practitioners in organizations, institutions, communities, and households. The landscape of research to date around normative frame effects have produced inconsistent results in connection with varying interpretations of what constitutes a norm, as well as an overall negligence of the importance of frame effects. 
+  
+  The research at the base of this sub-field is Cialdini et al's field study on messaging to benefit conservation efforts (2006). Given the potential efficiency of the messages utilizing norms and framing, these results have been used in countless interventions and as the starting point of numerous research projects. However, as described later, the experimental was severely flawed and more evidence needs to be provided to justify any conclusions. The present study aims to accomplish what Cialdini set out to do and look at how norms and framing can be used to improve message interpretation and behavior adoption.
+  
+
+
+### Literature Review  
+  In partnership with the Petrified Forest National Park, Cialdini et al. aimed to reduce theft of petrified wood through variances in norm messaging. In their study, they concluded that injunctive messages that were framed negatively, "please do not remove petrified wood from the park," resulted in significantly lower levels of theft than the positive alternative "please leave petrified wood in the park."  However, negatively-framed descriptive messages resulted in the highest levels of wood theft across all treatments, "many past visitors have removed petrified wood from the park." 
+  
+  This research is at odds with Bicchieri’s interpretation of norms (Bicchieri, 2006), which suggests the statements used in the study may be incorrect. For example, Bicchieri's normative expectations are very similar to Cialdini's injunctive norms definitionally but require the message to provide information about what others believe. Instead of Cialdini's injunctive norm messages the sign should have read something like, "most visitors believe petrified wood should be left in the park." The current wording of the message does not provide a reference network
+  
+  Cialdini’s design also has significant problems with the general use of framing. In the descriptive norm condition, the positive frame says "many people have left the petrified wood in the park... preserving the state of the park," but the negative frame says "many people have removed the petrified wood... changing the state of the park". The intended framing effect was the switch of preserving to changing the state of the park. However, these two words do not hold equal valence to many individuals. "Preserving" has a positive connotation, so it is useful for the positive frame, but to many individuals "changing" does not hold an innately negative connotation. Without evidence suggesting that Cialdini's assumption is in fact how people perceive the words, which he does not provide, no conclusions can be drawn between these two conditions. 
+  
+  Any discrepencies that do exist between the two messages are likely to be a result of the inverse content before the aformentioned keywords, where both say the majority of visitors but then describe those visitors as doing opposite actions (taking versus leaving the wood). This may display whether people are more susceptible to a majority influence when the behavior is desirable versus when it is not, rather than a valence frame. Research by Hallsworth et al. (2017) supports an interesting majority versus minority frame distinction, stressing the importance of isolating the minority status frame by explicitly linking recipient’s current behavior to the minority. This focus should act as a mechanism that increases the advantages of conforming to a norm. If Cialdini had intuited a similar idea and hoped to implement it, it would not be a design flaw on its own. However, the messages in the injunctive condition do not follow the same approach. The signs ask visitors to "please leave the wood" or "please don't remove the wood," which not only communicate the same takeaway but fail to implement any type of refrence network like a majority.
+  
+  
+  
+###Hypotheses
+  The hypotheses for the current investigation were developed by relying heavily on the work of Cialdini and Bicchieri. Although there are multiple options given the variables at play, three are identified below for the primary analysis:
+  
+  
+    1) Normative messages will result in less deceptive behavior compared to Empirical messages
+    2) There will be an interaction effect that will exaggerate the amount of lying in the empirical negative condition compared to the empirical positive condition.
+    3) Positive frame effects will still enable honest behavior to persist longer in the game.
+    
+    
+#####The null hypothesis is that framing effects and normative messaging have no effect on cheating behavior in our dice-roll paradigm.
+
+  

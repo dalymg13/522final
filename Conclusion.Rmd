@@ -1,0 +1,30 @@
+---
+title: "Conclusion"
+---
+
+###Discussion of Hypotheses
+  The test of hypothesis one, that normative messages would lead to less dishonesty than empirical messages, was an ANOVA of type of norm and type of frame on percentage of dishonesty. This test showed an insignificant effect of norm type, supporting the null hypothesis and refuting H1. However, there was a significant effect of frame type.
+  
+  The second ANOVA test and post-hoc analyses did not support the second hypothesis, that the empirical negative condition would have more lying behavior than normative negative or empirical positive. Instead, it more closely supported a distinction between normative negative and the other conditions or a simple negative frame effect. Boosting the power of the study would help distinguish between these outcomes.
+  
+  The third analysis could not investigate the necessary interaction between condition and round, which is necessary to fully explore the third hypothesis. What can be considered is that rounds 1 and 9 have significantly less cheating than many of the other rounds. Additionally, the graph shows that other than a round 2 spike in empirical negative, all conditions appear to remain fairly consistent. This suggests that the messages may influence a base level of dishonesty that is carried throughout the game.
+
+###Potential Explanation of Results
+  The main finding of the present research is the potential effect of negative frames in deterring dishonest behavior, or uncovering that the driver of this effect is a normative expectation and negative frame interaction. The negative frame finding could be explained by other types of framing research that shows similar effects of various kinds of "negative" frames. Levin, Schneider, and Gaeth’s (1998) explored goal framing and concluded that loss (negative) frames tend to be more effective because of the endowment effect. This rationale also falls in line with Prospect Theory. In the case of the negatively framed messages, participants knew that the minority either “did not truthfully report”, or “didn’t approve of truthfully reporting” dice rolls. Their focus could have been attached to the unpopularity of these behaviors, given the minority tag, and caused a fear of social loss that they desired to avoid.  Additional literature affirms that lessons learned from negative experiences trigger increased processing time, so we become more adept at managing it and have a “greater chance of surviving threats and more successful reproductive attempts” (Baumeister, et. al, 2001).
+
+###Implications
+  If findings were to hold from the present study once power is increased, they could imply that a more general effect of negative frames could be a partial driver of other findings like loss aversion. In contrast to this, the reference group tied into the frame could be separated and considered independently. It could be the case that people were opposed to being classified in a "minority" and that this opposition is a unique angle on negative frames, similar to goal framing. Cases could be explored to determine if any scenarios cause classifying oneself within a minority group are preferred.
+  
+  The implications mentioned in the previous paragraph could be explored by an expanded study. In order to isolate effects, the inverse of the four conditions should be included. For instance, a message suggesting that the majority of participants doing the bad behavior in contrast to the majority of participants doing the beneficial behavior. This would help make distinctions between wording choices required to create the message frames.
+  
+  Investigating risk once the confound is fixed would also be a very interesting follow-up. If it is indeed significant rather than the messages, interventions could be redesigned with risk tolerance and adjusting it as a focus.
+
+###Limitations
+  Overall the biggest limitation of this study is that lack of statistical power. However, such a limitation can be addressed fairly easily by gathering more data and seeing if the current trends hold up to further scrutiny.
+  
+  Another limitation is that it cannot determine the effect of messages at the individual level. For instance if negative messages do indeed decrease dishonest behavior, do they shift the behavior of most people exposed to it to slightly less dishonesty or does it impact fewer participants but shift their behavior by more significant amounts.
+  
+  The most disappointing limitation however, is the design flaw preventing the effect of risk tolerance from being investigated. If this experiment were continued to increase power, I would flip the risk question to the start of the survey. The entire demographics could be flipped up as well but are not necessary as they capture factual data rather than a self-reported psychological variable.
+  
+  
+  
